@@ -2,7 +2,7 @@ import { config } from "dotenv";
 
 config();
 
-export const puerto = 4000;
+export const puerto = process.env.PORT_URL;
 
 export const conexionDB = {
     DB_USER: process.env.USER || '',
